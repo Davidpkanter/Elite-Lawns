@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellington Equestrian Property Care | Elite Lawn Masters</title>
+    <meta name="description" content="Expert equestrian property care in Wellington FL. Horse farm maintenance & WEF-season services. Get your free evaluation! Call (561) 555-LAWN.">
+    <meta name="keywords" content="equestrian property care Wellington, horse farm maintenance, pasture management, WEF lawn care, Wellington equestrian landscaping, horse property maintenance">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Equestrian Property Care Wellington FL",
+        "description": "Specialized equestrian property maintenance and horse farm care in Wellington, Florida",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Elite Lawn Masters",
+            "telephone": "(561) 555-LAWN",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wellington",
+                "addressRegion": "FL",
+                "postalCode": "33414"
+            }
+        },
+        "areaServed": "Wellington, FL",
+        "serviceType": "Equestrian Property Maintenance",
+        "additionalType": "Horse Farm Care"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #DEB887;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #DEB887;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e55529;
+            transform: translateY(-2px);
+        }
+        
+        /* Equestrian Badge */
+        .equestrian-badge {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(139, 69, 19, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect width="1200" height="500" fill="%238B4513"/><path d="M0,300 Q300,200 600,250 T1200,230 L1200,500 L0,500 Z" fill="%23A0522D" opacity="0.8"/><circle cx="200" cy="100" r="60" fill="%23DEB887" opacity="0.3"/><circle cx="900" cy="180" r="80" fill="%23DEB887" opacity="0.2"/><path d="M300,80 L320,60 L340,80 L360,60 L380,80 L380,500 L300,500 Z" fill="%23654321" opacity="0.4"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            background: rgba(222, 184, 135, 0.2);
+            padding: 20px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(222, 184, 135, 0.3);
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-alt {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+        
+        .main-content h2 {
+            color: #8B4513;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+        
+        .main-content h3 {
+            color: #A0522D;
+            margin: 35px 0 20px 0;
+            font-size: 1.5rem;
+        }
+        
+        .main-content p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .main-content ul {
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+        
+        .main-content li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        /* Premium Highlight Box */
+        .premium-highlight {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .premium-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(222, 184, 135, 0.1) 10px,
+                rgba(222, 184, 135, 0.1) 20px
+            );
+            animation: shimmer 20s linear infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+        
+        .premium-highlight h3 {
+            color: #DEB887;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .premium-highlight p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 0;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 5px solid #8B4513;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #A0522D;
+        }
+        
+        .service-card h3 {
+            color: #8B4513;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Facilities Grid */
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .facility-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid #8B4513;
+            transition: all 0.3s;
+        }
+        
+        .facility-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .facility-item h4 {
+            color: #8B4513;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .facility-item p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* WEF Section */
+        .wef-section {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 80px 0;
+            margin: 60px 0;
+        }
+        
+        .wef-section h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .wef-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .wef-card {
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(222, 184, 135, 0.3);
+        }
+        
+        .wef-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #DEB887;
+        }
+        
+        .wef-card h3 {
+            color: #DEB887;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .wef-card p {
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #e55529;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #8B4513;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Equestrian Badge -->
+    <div class="equestrian-badge">
+        <div class="container">
+            🐎 Palm Beach County's Premier Equestrian Property Care - WEF Excellence Since 2017
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Elite <span>Lawn</span> Masters</a>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="#consultation" class="cta-button">Get Your Free Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Equestrian Property Care in Wellington, FL</h1>
+            <p class="subtitle">Transform your horse farm with professional maintenance that delivers lush pastures and pristine facilities year-round</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span>🐎</span>
+                    <span>Horse-Safe Excellence</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🏆</span>
+                    <span>WEF-Ready Standards</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🌟</span>
+                    <span>100% Satisfaction Guaranteed</span>
+                </div>
+            </div>
+            
+            <a href="#consultation" class="hero-cta">
+                <span>Get Your Free Property Evaluation</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Wellington's Most Trusted Equestrian Property Care Service Near Me</h2>
+                    <p>Elite Lawn Masters delivers exceptional equestrian property maintenance throughout Palm Beach County's world-renowned Wellington equestrian community. Our expert team understands the unique requirements of horse farms and training facilities, providing specialized care that enhances your property's functionality while maintaining the pristine appearance expected during the prestigious Winter Equestrian Festival season. We combine horse-safe practices with luxury landscape standards to create the perfect environment for both horses and their owners.</p>
+                    
+                    <p>From multi-acre training facilities to private horse farms, we provide comprehensive property maintenance that ensures your equestrian estate looks immaculate year-round. Our proven expertise makes us the trusted choice for Wellington's most discerning equestrian property owners who demand excellence in every detail.</p>
+
+                    <div class="premium-highlight">
+                        <h3>Transform Your Equestrian Property Today!</h3>
+                        <p>Professional horse farm maintenance delivering lush pastures and show-ready facilities</p>
+                    </div>
+
+                    <h3>Comprehensive Wellington Equestrian Property Services</h3>
+                    <ul>
+                        <li><strong>Professional Pasture Management:</strong> Expert mowing, overseeding, and weed control for healthy grazing areas</li>
+                        <li><strong>Arena & Training Area Maintenance:</strong> Sand grooming, drainage management, and footing care for optimal performance</li>
+                        <li><strong>Stable Area Excellence:</strong> Pristine maintenance around barns, wash areas, and turnout spaces</li>
+                        <li><strong>Fence Line Management:</strong> Clear, clean boundaries enhancing property appeal and safety</li>
+                        <li><strong>Access Road Maintenance:</strong> Professional upkeep of driveways and roads handling heavy trailer traffic</li>
+                        <li><strong>Show Facility Grounds:</strong> Competition-ready maintenance for training and event facilities</li>
+                        <li><strong>Estate Landscaping:</strong> Luxury residence grounds matching Wellington's prestigious standards</li>
+                    </ul>
+
+                    <h3>Wellington Equestrian Communities We Serve</h3>
+                    <div class="facilities-grid">
+                        <div class="facility-item">
+                            <h4>🐎 Professional Training Barns</h4>
+                            <p>Expert maintenance for Olympic-level training facilities throughout Wellington's equestrian district.</p>
+                        </div>
+                        <div class="facility-item">
+                            <h4>🏆 Competition Venues</h4>
+                            <p>Show grounds and warm-up areas maintained to WEF championship standards.</p>
+                        </div>
+                        <div class="facility-item">
+                            <h4>🏡 Private Horse Farms</h4>
+                            <p>Comprehensive care for multi-acre properties with stables and luxury residences.</p>
+                        </div>
+                        <div class="facility-item">
+                            <h4>🌿 Breeding Operations</h4>
+                            <p>Specialized maintenance with safety protocols for mares, foals, and stallions.</p>
+                        </div>
+                        <div class="facility-item">
+                            <h4>🏠 Equestrian Estates</h4>
+                            <p>Luxury properties combining world-class stables with pristine residential landscapes.</p>
+                        </div>
+                        <div class="facility-item">
+                            <h4>🎪 Event Facilities</h4>
+                            <p>Professional preparation and maintenance for equestrian events and competitions.</p>
+                        </div>
+                    </div>
+
+                    <h3>Why Wellington's Elite Choose Our Equestrian Services</h3>
+                    <p>Our horse property maintenance delivers exceptional results through:</p>
+                    <ul>
+                        <li><strong>Horse-Safe Protocols:</strong> All staff trained in equine behavior and safety procedures</li>
+                        <li><strong>Equipment Expertise:</strong> Understanding of jumps, arenas, and equestrian infrastructure</li>
+                        <li><strong>Quiet Operations:</strong> Scheduled maintenance minimizing disruption to training</li>
+                        <li><strong>Gate Security:</strong> Proper protocols ensuring livestock containment and safety</li>
+                        <li><strong>Chemical Safety:</strong> Horse-safe products protecting grazing areas and water sources</li>
+                        <li><strong>Emergency Response:</strong> Rapid response for equestrian facility emergencies</li>
+                    </ul>
+
+                    <h3>Year-Round Equestrian Property Excellence</h3>
+                    <p>Our seasonal maintenance programs adapt to Wellington's equestrian calendar:</p>
+                    <ul>
+                        <li><strong>Pre-WEF Season (October-December):</strong> Intensive preparation for peak presentation</li>
+                        <li><strong>WEF Season (January-April):</strong> Enhanced maintenance matching championship standards</li>
+                        <li><strong>Post-Season (May-June):</strong> Recovery maintenance and facility improvements</li>
+                        <li><strong>Summer (July-September):</strong> Pasture renovation and hurricane preparation</li>
+                    </ul>
+
+                    <p><strong>Ready to achieve the pristine equestrian property your horses deserve?</strong> Contact Elite Lawn Masters today for your free evaluation. Our experts will assess your unique needs and create a customized maintenance plan that delivers exceptional results. Call now for special equestrian property pricing!</p>
+
+                    <h3>Get Started With Professional Equestrian Care</h3>
+                    <p>Don't let property maintenance distract from your equestrian pursuits. Elite Lawn Masters provides the reliable, professional service your horse farm needs to look its absolute best. Schedule your complimentary consultation today and discover why Wellington's top equestrians trust us with their properties!</p>
+                </div>
+
+                <div style="background: white; padding: 0;">
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #8B4513; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">🐎 Equestrian Excellence</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #8B4513; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Horse-safe protocols
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #8B4513; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Pasture management
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #8B4513; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Arena maintenance
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #8B4513; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                WEF-season ready
+                            </li>
+                            <li style="padding: 12px 0; border: none; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #8B4513; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                100% satisfaction
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #8B4513; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">📞 Get Started Today!</h3>
+                        <p style="text-align: center; margin-bottom: 20px;">Professional equestrian property care near me</p>
+                        <div style="text-align: center;">
+                            <a href="tel:5615551234" style="display: block; background: #8B4513; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-bottom: 10px;">📞 Call (561) 555-LAWN</a>
+                            <a href="#consultation" style="display: block; background: #ff6b35; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold;">Schedule Free Evaluation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Specialized Equestrian Services</h2>
+            <p class="section-subtitle">Comprehensive property care tailored to Wellington's equestrian excellence</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌾</div>
+                    <h3>Pasture Management</h3>
+                    <p>Professional mowing, overseeding, fertilization, and weed control ensuring optimal grazing conditions and horse health.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏇</div>
+                    <h3>Arena & Training Areas</h3>
+                    <p>Expert sand grooming, drainage management, and jump area maintenance for championship-level training facilities.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Stable & Barn Areas</h3>
+                    <p>Comprehensive maintenance around stables with horse-safe protocols ensuring pristine, functional facilities.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚜</div>
+                    <h3>Large Property Care</h3>
+                    <p>Multi-acre maintenance including fence lines, access roads, and perimeter management for expansive estates.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌸</div>
+                    <h3>Estate Landscaping</h3>
+                    <p>Luxury residence grounds and entrance beautification matching Wellington's prestigious standards.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎪</div>
+                    <h3>Event Preparation</h3>
+                    <p>Special event setup and enhanced maintenance for competitions, clinics, and equestrian gatherings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEF Section -->
+    <section class="wef-section">
+        <div class="container">
+            <h2>Winter Equestrian Festival (WEF) Season Excellence</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px; opacity: 0.9;">Enhanced services during Wellington's premier equestrian season</p>
+            
+            <div class="wef-content">
+                <div class="wef-card">
+                    <div class

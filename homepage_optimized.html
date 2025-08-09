@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Palm Beach Lawn Care | Elite Lawn Masters</title>
+    <meta name="description" content="Premier lawn care in West Palm Beach FL. Professional grass cutting, landscaping & yard maintenance. Same-day service. 100% satisfaction guarantee. Call (561) 555-LAWN!">
+    <meta name="keywords" content="lawn care West Palm Beach, grass cutting near me, landscaping Palm Beach County, yard maintenance, professional lawn service, West Palm Beach lawn mowing">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Elite Lawn Masters">
+    <meta property="og:title" content="Elite Lawn Masters - #1 West Palm Beach Lawn Care Service">
+    <meta property="og:description" content="Transform your West Palm Beach property with professional lawn care. Same-day service, licensed & insured.">
+    <meta property="og:image" content="https://elitelawnmasters.com/images/wpb-lawn-care.jpg">
+    <meta property="og:url" content="https://elitelawnmasters.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-item > a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-item > a:hover {
+            color: #90EE90;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 250px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #2d5a27;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .dropdown-menu a:hover {
+            background: #f8f9fa;
+            color: #4a7c59;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .logo span {
+            color: #90EE90;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #90EE90;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e55529;
+            transform: translateY(-2px);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(45, 90, 39, 0.8), rgba(74, 124, 89, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect width="1200" height="600" fill="%234a7c59"/><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="%232d5a27" opacity="0.8"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero-feature .icon {
+            font-size: 1.5rem;
+        }
+        
+        .main-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .main-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2d5a27;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 4px solid #4a7c59;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #4a7c59;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2d5a27;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .service-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-top: 15px;
+        }
+        
+        /* Why Choose Us */
+        .why-choose-us {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4a7c59, #2d5a27);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2d5a27;
+        }
+        
+        .feature-item p {
+            color: #666;
+        }
+        
+        /* Service Areas */
+        .service-areas {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .areas-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .areas-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .areas-list {
+            columns: 3;
+            column-gap: 30px;
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .areas-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+            break-inside: avoid;
+        }
+        
+        .areas-list li a {
+            color: #2d5a27;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .areas-list li a:hover {
+            color: #4a7c59;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: #2d5a27;
+            color: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #90EE90;
+        }
+        
+        .stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+        
+        .contact-info h3 {
+            color: #2d5a27;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item .icon {
+            width: 50px;
+            height: 50px;
+            background: #4a7c59;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .contact-item .details h4 {
+            color: #2d5a27;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item .details p {
+            color: #666;
+        }
+        
+        .contact-form {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        
+        .contact-form h3 {
+            color: #2d5a27;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2d5a27;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .submit-btn {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #e55529;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 50px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #90EE90;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #90EE90;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2d5a27;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+            
+            .main-nav.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .areas-list {
+                columns: 1;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Elite Lawn Masters",
+        "description": "Professional lawn care and landscaping services in West Palm Beach and Palm Beach County, FL",
+        "url": "https://elitelawnmasters.com",
+        "telephone": "(561) 555-LAWN",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Lawn Care Blvd",
+            "addressLocality": "West Palm Beach",
+            "addressRegion": "FL",
+            "postalCode": "33401",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "26.7153",
+            "longitude": "-80.0534"
+        },
+        "areaServed": [
+            "West Palm Beach", "Boca Raton", "Boynton Beach", "Delray Beach", 
+            "Lake Worth Beach", "Wellington", "Palm Beach Gardens", "Jupiter"
+        ],
+        "serviceType": "Lawn Care Service",
+        "priceRange": "$45-$150",
+        "openingHours": "Mo-Sa 07:00-18:00",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Lawn Care Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Weekly Lawn Mowing"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Landscape Design"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Elite <span>Lawn</span> Masters</div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+                <nav class="main-nav" id="mainNav">
+                    <div class="nav-item dropdown">
+                        <a href="#services">Services ▼</a>
+                        <div class="dropdown-menu">
+                            <a href="/lawn-mowing-west-palm-beach">Weekly Lawn Mowing</a>
+                            <a href="/hedge-trimming-palm-beach">Hedge Trimming & Pruning</a>
+                            <a href="/landscape-design-west-palm-beach">Landscape Design</a>
+                            <a href="/irrigation-services-palm-beach">Irrigation Services</a>
+                            <a href="/hurricane-cleanup-west-palm-beach-fl">Hurricane Prep & Cleanup</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#locations">Locations</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="#quote" class="cta-button">Free Estimate</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Palm Beach County's Premier Lawn Care Service</h1>
+            <p class="subtitle">Professional grass cutting, landscaping & yard maintenance throughout West Palm Beach since 2017</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span class="icon">⚡</span>
+                    <span>Same-Day Service</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="icon">🏆</span>
+                    <span>Licensed & Insured</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="icon">💯</span>
+                    <span>100% Satisfaction</span>
+                </div>
+            </div>
+            
+            <a href="#quote" class="main-cta">
+                <span>Get Your Free Lawn Care Estimate</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Complete Lawn Care Services Throughout Palm Beach County</h2>
+            <p class="section-subtitle">From weekly grass cutting in West Palm Beach to complete landscape transformations in Boca Raton, we're your trusted lawn care experts serving all of Palm Beach County with professional, reliable service.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Weekly Lawn Mowing</h3>
+                    <p>Professional grass cutting with premium equipment. Includes edging, blowing, and cleanup for that perfect manicured look your Palm Beach County property deserves.</p>
+                    <div class="service-price">Starting at $45/visit</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Hedge Trimming & Pruning</h3>
+                    <p>Expert hedge shaping and plant pruning to maintain healthy growth and enhance curb appeal throughout West Palm Beach and surrounding areas.</p>
+                    <div class="service-price">Starting at $75/service</div>
+                

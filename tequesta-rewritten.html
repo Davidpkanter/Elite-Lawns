@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequesta Lawn Care Services | Elite Lawn Masters</title>
+    <meta name="description" content="Professional lawn care in Tequesta FL. Reliable service for waterfront properties. Get your free estimate! Call (561) 555-LAWN today.">
+    <meta name="keywords" content="lawn care Tequesta FL, Tequesta lawn service, residential landscaping, quiet neighborhood lawn care">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6b8e23 0%, #8fbc8f 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #98fb98;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #98fb98;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .community-badge {
+            background: linear-gradient(135deg, #6b8e23, #8fbc8f);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(107, 142, 35, 0.8), rgba(143, 188, 143, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect width="1200" height="500" fill="%236b8e23"/><path d="M0,350 Q300,250 600,300 T1200,280 L1200,500 L0,500 Z" fill="%238fbc8f" opacity="0.8"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #6b8e23;
+            text-align: center;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .main-content h2 {
+            color: #6b8e23;
+            margin-bottom: 20px;
+        }
+        
+        .main-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .main-content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .main-content li {
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #6b8e23, #8fbc8f);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="community-badge">
+        <div class="container">
+            🌿 Palm Beach County's Trusted Lawn Care Experts - Serving Tequesta Since 2017
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Elite <span>Lawn</span> Masters</a>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="/#quote" class="cta-button">Get Your Free Lawn Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Lawn Care Services in Tequesta, FL</h1>
+            <p class="subtitle">Transform your Tequesta property with expert lawn maintenance that delivers lush, beautiful results year-round</p>
+            <a href="/#quote" class="hero-cta">
+                <span>Get Your Free Lawn Evaluation</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Tequesta's Premier Lawn Care Service Near Me</h2>
+                    <p>Elite Lawn Masters brings professional lawn care excellence to Palm Beach County's charming Village of Tequesta. Our experienced team understands that Tequesta homeowners value both quality service and the peaceful character of their beautiful riverside community. We deliver exceptional lawn care results that enhance your property's curb appeal while maintaining the tranquil atmosphere you love about living in this special corner of Palm Beach County.</p>
+                    
+                    <p>From waterfront estates along the Loxahatchee River to quiet residential neighborhoods near Tequesta Country Club, we provide comprehensive lawn maintenance that keeps your property looking its absolute best. Our reliable, professional service ensures your lawn stays lush, green, and healthy throughout every season.</p>
+
+                    <h3>Complete Tequesta Lawn Care & Landscaping Services</h3>
+                    <ul>
+                        <li><strong>Professional Lawn Mowing:</strong> Precision cutting and edging for perfectly manicured lawns</li>
+                        <li><strong>Expert Hedge Trimming:</strong> Shape and maintain shrubs for enhanced curb appeal</li>
+                        <li><strong>Waterfront Property Specialists:</strong> Custom care for riverside and canal-front landscapes</li>
+                        <li><strong>Fertilization Programs:</strong> Nutrient-rich treatments promoting lush, green growth</li>
+                        <li><strong>Weed Control Solutions:</strong> Keep invasive weeds from overtaking your beautiful lawn</li>
+                        <li><strong>Seasonal Cleanup:</strong> Storm preparation and recovery services year-round</li>
+                        <li><strong>Native Plant Care:</strong> Expert maintenance of Florida-friendly landscapes</li>
+                    </ul>
+
+                    <h3>Serving All Tequesta Neighborhoods</h3>
+                    <ul>
+                        <li>Riverside properties along the scenic Loxahatchee River</li>
+                        <li>Homes near prestigious Tequesta Country Club</li>
+                        <li>Residential areas throughout the Village of Tequesta</li>
+                        <li>Properties near beautiful Coral Cove Park</li>
+                        <li>Waterfront homes and canal-front estates</li>
+                        <li>All neighborhoods in the 33469 zip code</li>
+                    </ul>
+
+                    <h3>Why Tequesta Homeowners Choose Elite Lawn Masters</h3>
+                    <ul>
+                        <li><strong>Respectful Service:</strong> Quiet, professional operations maintaining neighborhood tranquility</li>
+                        <li><strong>Consistent Excellence:</strong> Reliable weekly or bi-weekly maintenance you can count on</li>
+                        <li><strong>Local Expertise:</strong> Deep understanding of Tequesta's unique landscape requirements</li>
+                        <li><strong>Waterfront Specialists:</strong> Experienced with riverside and coastal property challenges</li>
+                        <li><strong>100% Satisfaction Guarantee:</strong> We're not happy until your lawn looks perfect</li>
+                        <li><strong>Environmental Stewardship:</strong> Eco-friendly practices protecting Tequesta's natural beauty</li>
+                    </ul>
+
+                    <h3>Special Considerations for Tequesta Properties</h3>
+                    <ul>
+                        <li><strong>Waterfront Landscaping:</strong> Expert care for properties along the Loxahatchee River</li>
+                        <li><strong>Native Plant Preservation:</strong> Maintain and enhance Florida's natural vegetation</li>
+                        <li><strong>Quiet Equipment Operation:</strong> Professional service respecting your peaceful community</li>
+                        <li><strong>Environmental Sensitivity:</strong> Protecting nearby natural areas and waterways</li>
+                        <li><strong>Hurricane Preparation:</strong> Storm-ready lawn care for coastal properties</li>
+                        <li><strong>Custom Treatment Plans:</strong> Tailored solutions for your specific lawn needs</li>
+                    </ul>
+
+                    <p><strong>Ready to experience the Elite difference?</strong> Contact us today for your free lawn evaluation and discover why Tequesta residents trust us for all their lawn care needs. Our professional team is ready to transform your property with expert care that delivers stunning results while respecting the peaceful character of your neighborhood.</p>
+
+                    <h3>Get Started With Your Free Tequesta Lawn Evaluation</h3>
+                    <p>Don't let lawn maintenance stress you out. Let Elite Lawn Masters handle everything while you enjoy Tequesta's beautiful weather and relaxed lifestyle. Call now to schedule your complimentary consultation and receive a customized lawn care plan designed specifically for your property's needs. Mention this page for special new customer pricing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Transform Your Tequesta Lawn Today!</h2>
+            <p>Professional lawn care that delivers lush, healthy results you'll love</p>
+            <a href="tel:5615551234" class="btn-primary">📞 Call (561) 555-LAWN Now</a>
+            <a href="/#quote" class="btn-primary">Schedule Your Free Evaluation</a>
+        </div>
+    </section>
+</body>
+</html>

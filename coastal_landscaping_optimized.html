@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Landscaping Palm Beach Gardens | Elite Lawn Masters</title>
+    <meta name="description" content="Expert coastal landscaping in Palm Beach Gardens FL. Salt-tolerant plants, hurricane-resistant design near me. Palm Beach County's oceanfront specialists. Call (561) 555-LAWN!">
+    <meta name="keywords" content="coastal landscaping Palm Beach Gardens, salt tolerant landscaping near me, oceanfront landscape design Palm Beach County, coastal property maintenance, hurricane resistant landscaping Florida">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Coastal Landscaping Palm Beach Gardens FL",
+        "description": "Specialized coastal landscaping and salt-tolerant landscape design in Palm Beach County, Florida",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Elite Lawn Masters",
+            "telephone": "(561) 555-LAWN",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Palm Beach Gardens",
+                "addressRegion": "FL",
+                "postalCode": "33410"
+            }
+        },
+        "areaServed": ["Palm Beach Gardens", "Jupiter", "Juno Beach", "Tequesta", "Palm Beach County"],
+        "serviceType": "Coastal Landscaping",
+        "additionalType": "Salt-Tolerant Landscape Design"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #4682B4 0%, #5F9EA0 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #B0E0E6;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #B0E0E6;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e55529;
+            transform: translateY(-2px);
+        }
+        
+        /* Coastal Badge */
+        .coastal-badge {
+            background: linear-gradient(135deg, #4682B4, #5F9EA0);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(70, 130, 180, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(70, 130, 180, 0.8), rgba(95, 158, 160, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect width="1200" height="500" fill="%234682B4"/><path d="M0,300 Q300,200 600,250 T1200,230 L1200,500 L0,500 Z" fill="%235F9EA0" opacity="0.8"/><circle cx="150" cy="80" r="40" fill="%23B0E0E6" opacity="0.4"/><circle cx="900" cy="120" r="60" fill="%23B0E0E6" opacity="0.3"/><path d="M200,400 Q400,350 600,380 T1000,360 L1000,500 L200,500 Z" fill="%23708090" opacity="0.5"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            background: rgba(176, 224, 230, 0.2);
+            padding: 20px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(176, 224, 230, 0.3);
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-alt {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4682B4;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+        
+        .main-content h2 {
+            color: #4682B4;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+        
+        .main-content h3 {
+            color: #5F9EA0;
+            margin: 35px 0 20px 0;
+            font-size: 1.5rem;
+        }
+        
+        .main-content p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .main-content ul {
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+        
+        .main-content li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        /* Coastal Highlight Box */
+        .coastal-highlight {
+            background: linear-gradient(135deg, #4682B4, #5F9EA0);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coastal-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 15px,
+                rgba(176, 224, 230, 0.1) 15px,
+                rgba(176, 224, 230, 0.1) 30px
+            );
+            animation: wave 15s linear infinite;
+        }
+        
+        @keyframes wave {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(0deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(360deg); }
+        }
+        
+        .coastal-highlight h3 {
+            color: #B0E0E6;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .coastal-highlight p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 0;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 5px solid #4682B4;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #5F9EA0;
+        }
+        
+        .service-card h3 {
+            color: #4682B4;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Plants Grid */
+        .plants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .plant-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid #4682B4;
+            transition: all 0.3s;
+        }
+        
+        .plant-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .plant-item h4 {
+            color: #4682B4;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .plant-item p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Challenges Section */
+        .challenges-section {
+            background: linear-gradient(135deg, #4682B4, #5F9EA0);
+            color: white;
+            padding: 80px 0;
+            margin: 60px 0;
+        }
+        
+        .challenges-section h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .challenge-card {
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(176, 224, 230, 0.3);
+        }
+        
+        .challenge-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #B0E0E6;
+        }
+        
+        .challenge-card h3 {
+            color: #B0E0E6;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .challenge-card p {
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #4682B4, #5F9EA0);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #e55529;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #4682B4;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Coastal Badge -->
+    <div class="coastal-badge">
+        <div class="container">
+            🌊 Palm Beach County's Premier Coastal Landscaping Specialists | Salt-Tolerant Excellence Since 2017
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Elite <span>Lawn</span> Masters</a>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="#consultation" class="cta-button">Get Your Coastal Design</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Coastal Landscaping Throughout Palm Beach County</h1>
+            <p class="subtitle">Specialized salt-tolerant landscape design and oceanfront property care from Palm Beach Gardens to Jupiter. Hurricane-resistant beauty that thrives by the sea with professional maintenance you can count on.</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span>🌊</span>
+                    <span>Salt-Tolerant Expertise</span>
+                </div>
+                <div class="hero-feature">
+                    <span>⛈️</span>
+                    <span>Hurricane-Resistant Design</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🏖️</span>
+                    <span>Oceanfront Specialists</span>
+                </div>
+            </div>
+            
+            <a href="#consultation" class="hero-cta">
+                <span>Get Your Free Coastal Landscaping Consultation</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Palm Beach County's Leading Coastal Landscape Design Specialists</h2>
+                    <p>Elite Lawn Masters brings specialized coastal landscaping expertise throughout Palm Beach County, with focused service in Palm Beach Gardens' oceanfront and near-shore communities. Our mastery of salt-tolerant plants, wind-resistant design, and hurricane-ready landscapes makes us the preferred choice for discerning coastal property owners from Juno Beach to Jupiter Island. We understand that coastal properties require unique expertise - from managing salt spray to creating windbreaks that protect while beautifying your oceanfront oasis.</p>
+                    
+                    <p>Whether you own an oceanfront estate in Palm Beach Gardens, a beachside condo in Jupiter, or a coastal property anywhere along Palm Beach County's pristine shoreline, our designs combine stunning aesthetics with proven resilience. We create landscapes that thrive in salt-air environments while maintaining the sophisticated beauty that coastal living demands. Our comprehensive approach ensures your landscape not only survives but flourishes in challenging coastal conditions.</p>
+
+                    <div class="coastal-highlight">
+                        <h3>Coastal Landscaping Excellence</h3>
+                        <p>Expert salt-tolerant design and oceanfront property care serving all of Palm Beach County's coastal communities</p>
+                    </div>
+
+                    <h3>Comprehensive Coastal Landscaping Services</h3>
+                    <ul>
+                        <li><strong>Salt-Tolerant Plant Design:</strong> Expert selection and placement of coastal-adapted species that thrive in salt-air</li>
+                        <li><strong>Oceanfront Property Care:</strong> Specialized maintenance for beachfront and near-shore properties throughout Palm Beach County</li>
+                        <li><strong>Hurricane-Resistant Landscaping:</strong> Storm-proof design with proven survival rates during major hurricanes</li>
+                        <li><strong>Coastal Erosion Control:</strong> Natural and engineered solutions protecting against wind and water erosion</li>
+                        <li><strong>Wind-Barrier Plantings:</strong> Strategic screening providing comfort and protection from coastal winds</li>
+                        <li><strong>Coastal Irrigation Systems:</strong> Corrosion-resistant irrigation designed specifically for salt-air environments</li>
+                        <li><strong>Beach Access Landscaping:</strong> Beautiful pathway and dune area maintenance compliant with coastal regulations</li>
+                    </ul>
+
+                    <h3>Proven Coastal-Adapted Plant Expertise</h3>
+                    <p>Our extensive plant palette includes species specifically chosen for Palm Beach County's coastal resilience:</p>
+                    
+                    <div class="plants-grid">
+                        <div class="plant-item">
+                            <h4>🌿 Sea Grape</h4>
+                            <p>Perfect for beachfront screening with natural salt tolerance and hurricane resistance throughout Palm Beach County.</p>
+                        </div>
+                        <div class="plant-item">
+                            <h4>🌴 Sabal Palm</h4>
+                            <p>Native Florida palm ideal for coastal landscapes with excellent wind and salt tolerance.</p>
+                        </div>
+                        <div class="plant-item">
+                            <h4>🌺 Bougainvillea</h4>
+                            <p>Vibrant flowering vine that thrives in salt air providing year-round coastal color.</p>
+                        </div>
+                        <div class="plant-item">
+                            <h4>🌾 Beach Sunflower</h4>
+                            <p>Native groundcover perfect for dune stabilization and coastal erosion control.</p>
+                        </div>
+                        <div class="plant-item">
+                            <h4>🌿 Simpson's Stopper</h4>
+                            <p>Dense native shrub excellent for coastal hedging and reliable wind protection.</p>
+                        </div>
+                        <div class="plant-item">
+                            <h4>🌸 Oleander</h4>
+                            <p>Hardy flowering shrub with exceptional salt tolerance providing continuous blooms.</p>
+                        </div>
+                    </div>
+
+                    <h3>Palm Beach County Coastal Communities We Serve</h3>
+                    <p>We provide specialized coastal landscaping throughout Palm Beach County's premier oceanfront communities:</p>
+                    <ul>
+                        <li>Palm Beach Gardens oceanfront properties and coastal condominiums</li>
+                        <li>Juno Beach residential communities and beachfront estates</li>
+                        <li>Jupiter Island exclusive oceanfront properties</li>
+                        <li>Tequesta waterfront homes and marina communities</li>
+                        <li>Singer Island high-rise condominiums and resort properties</li>
+                        <li>Palm Beach Shores coastal residences</li>
+                        <li>Ocean Ridge beachfront estates</li>
+                        <li>Highland Beach luxury oceanfront properties</li>
+                        <li>Manalapan exclusive coastal estates</li>
+                    </ul>
+
+                    <h3>Year-Round Coastal Landscape Care Program</h3>
+                    <p>Our comprehensive maintenance program addresses Palm Beach County's unique seasonal coastal challenges:</p>
+                    <ul>
+                        <li><strong>Spring:</strong> Storm damage assessment, salt-burn treatment, and growth preparation</li>
+                        <li><strong>Summer:</strong> Intensive salt-spray protection, drought management, and bloom optimization</li>
+                        <li><strong>Hurricane Season:</strong> Storm preparation, protective measures, and rapid post-storm recovery</li>
+                        <li><strong>Winter:</strong> Tourist season presentation and protection for temperature-sensitive coastal plants</li>
+                    </ul>
+
+                    <p>Don't let salt air and coastal conditions limit your landscape's potential. Our proven expertise in coastal landscaping throughout Palm Beach County ensures your property maintains stunning curb appeal while standing strong against nature's challenges. <strong>Call Elite Lawn Masters today for your Free Coastal Landscaping Assessment!</strong></p>
+                </div>
+
+                <div style="background: white; padding: 0;">
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #4682B4; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #4682B4; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">🌊 Coastal Expertise</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #4682B4; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Salt-tolerant plant specialists
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #4682B4; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Hurricane-resistant design
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #4682B4; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Oceanfront property care
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #4682B4; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Erosion control solutions
+                            </li>
+                            <li style="padding: 12px 0; border: none; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #4682B4; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Coastal irrigation systems
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #4682B4; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #4682B4; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">📞 Coastal Contact</h3>
+                        <p style="text-align: center; margin-bottom: 20px;">Ready for coastal landscaping excellence?</p>
+                        <div style="text-align: center;">
+                            <a href="tel:5615551234" style="display: block; background: #4682B4; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-bottom: 10px;">📞 Call (561) 555-LAWN</a>
+                            <a href="/contact" style="display: block; background: #ff6b35; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold;">Get Your Free Coastal Design Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Coastal Landscaping Services</h2>
+            <p class="section-subtitle">Expert coastal design and maintenance for Palm Beach County's oceanfront communities</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Salt-Tolerant Plant Design</h3>
+                    <p>Expert selection and placement of coastal-adapted plants that thrive in salt-air environments while providing year-round beauty throughout Palm Beach County.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏖️</div>
+                    <h3>Oceanfront Property Care</h3>
+                    <p>Specialized maintenance for beachfront properties including dune protection, beach access maintenance, and comprehensive salt-spray management.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⛈️</div>
+                    <h3>Hurricane-Resistant Design</h3>
+                    <p>Storm-proof landscaping with wind-resistant plants, proper drainage systems, and emergency preparation protocols proven effective.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌊</div>
+                    <h3>Coastal Erosion Control</h3>
+                    <p>Natural and engineered solutions to protect against wind and water erosion while maintaining your property's aesthetic appeal.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Wind-Barrier Plantings</h3>
+                    <p>Strategic screening and wind protection using salt-tolerant trees and shrubs for comfortable outdoor living spaces.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Coastal Irrigation Systems</h3>
+                    <p>Specialized irrigation designed for salt-air environments with corrosion-resistant components and efficient water usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="challenges-section">
+        <div class="container">
+            <h2>Mastering Coastal Landscaping Challenges</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px; opacity: 0.9;">Expert solutions for the unique challenges of coastal landscaping in Palm Beach County</p>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">🧂</div>
+                    <h3>Salt Air Exposure</h3>
+                    <p>Constant salt-spray requires specialized plant selection, irrigation design, and protective measures to prevent leaf burn and equipment corrosion.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">💨</div>
+                    <h3>High Wind Conditions</h3>
+                    <p>Oceanfront winds require wind-resistant plant choices, strategic placement, and proper anchoring systems for landscape elements.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">⛈️</div>
+                    <h3>Hurricane Preparation</h3>
+                    <p>Storm season requires specialized pruning, securing protocols, and recovery planning to protect valuable landscape investments.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">🏖️</div>
+                    <h3>Sandy Soil Conditions</h3>
+                    <p>Beach-area soils require specific amendment strategies, drainage solutions, and plant selections adapted to sandy conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="consultation">
+        <div class="container">
+            <h2>Ready for Expert Coastal Landscaping Near Me?</h2>
+            <p>Transform your coastal property with salt-tolerant beauty and hurricane-resistant design throughout Palm Beach County</p>
+            <div class="cta-buttons">
+                <a href="tel:5615551234" class="btn-primary">
+                    <span>📞</span>
+                    <span>Call for Coastal Expertise</span>
+                </a>
+                <a href="/contact" class="btn-secondary">Schedule Your Free Design Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

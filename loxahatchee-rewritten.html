@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loxahatchee Lawn Care & Acreage | Elite Lawn Masters</title>
+    <meta name="description" content="Expert lawn care for Loxahatchee FL rural properties. Large acreage maintenance specialists. Free estimates! Call (561) 555-LAWN today.">
+    <meta name="keywords" content="lawn care Loxahatchee FL, rural property maintenance, acreage care, large property landscaping, pasture maintenance">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #654321 0%, #8b7355 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #deb887;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #deb887;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .community-badge {
+            background: linear-gradient(135deg, #654321, #8b7355);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(101, 67, 33, 0.8), rgba(139, 115, 85, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect width="1200" height="500" fill="%23654321"/><path d="M0,300 Q300,200 600,250 T1200,230 L1200,500 L0,500 Z" fill="%238b7355" opacity="0.8"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #654321;
+            text-align: center;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .main-content h2 {
+            color: #654321;
+            margin-bottom: 20px;
+        }
+        
+        .main-content h3 {
+            color: #8b7355;
+            margin: 30px 0 15px 0;
+        }
+        
+        .main-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .main-content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .main-content li {
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #654321, #8b7355);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="community-badge">
+        <div class="container">
+            🚜 Palm Beach County's Large Property Experts - Serving Loxahatchee Since 2017
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Elite <span>Lawn</span> Masters</a>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="/#quote" class="cta-button">Get Your Free Lawn Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Large Property & Acreage Care in Loxahatchee, FL</h1>
+            <p class="subtitle">Professional lawn maintenance for rural properties, horse farms, and multi-acre estates throughout Palm Beach County</p>
+            <a href="/#quote" class="hero-cta">
+                <span>Get Your Free Property Assessment</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Loxahatchee's Trusted Large Property Lawn Care Specialists</h2>
+                    <p>Elite Lawn Masters delivers professional large-scale lawn care throughout Palm Beach County's rural Loxahatchee community. We specialize in maintaining expansive properties, from multi-acre residential estates to working horse farms and agricultural lands. Our heavy-duty equipment and experienced crews handle the unique challenges of rural property maintenance, ensuring your acreage looks pristine while enhancing your property value and curb appeal.</p>
+                    
+                    <p>Whether you own a horse farm, rural estate, or agricultural property, we provide comprehensive maintenance solutions scaled to match your needs. Our reliable service keeps your large property beautiful, functional, and ready to impress visitors and potential buyers alike.</p>
+
+                    <h3>Comprehensive Large Property Services for Loxahatchee</h3>
+                    <ul>
+                        <li><strong>Multi-Acre Mowing & Brush Cutting:</strong> Professional equipment for efficient large-scale maintenance</li>
+                        <li><strong>Pasture Management:</strong> Keep horse pastures and grazing areas properly maintained</li>
+                        <li><strong>Fence Line Clearing:</strong> Clean, clear boundaries enhancing property appeal</li>
+                        <li><strong>Rural Driveway Maintenance:</strong> Gravel grading and access road upkeep</li>
+                        <li><strong>Agricultural Landscaping:</strong> Beautiful yet functional designs for working properties</li>
+                        <li><strong>Horse Farm Specialty Care:</strong> Arena maintenance and stable area management</li>
+                        <li><strong>Large-Scale Debris Removal:</strong> Storm cleanup and property clearing services</li>
+                        <li><strong>Pond & Water Feature Care:</strong> Maintenance for agricultural and decorative water features</li>
+                    </ul>
+
+                    <h3>Serving All Loxahatchee Areas & Rural Palm Beach County</h3>
+                    <ul>
+                        <li>Large estates along Southern Boulevard corridor</li>
+                        <li>Horse farms and equestrian properties throughout the area</li>
+                        <li>Multi-acre residential estates requiring professional care</li>
+                        <li>Agricultural properties and working farms</li>
+                        <li>Rural developments and farm communities</li>
+                        <li>All properties in 33470 and surrounding rural zones</li>
+                    </ul>
+
+                    <h3>Why Loxahatchee Property Owners Trust Elite Lawn Masters</h3>
+                    <ul>
+                        <li><strong>Large Property Expertise:</strong> Proven experience with multi-acre maintenance challenges</li>
+                        <li><strong>Agricultural Knowledge:</strong> Understanding of farm, ranch, and rural property needs</li>
+                        <li><strong>Professional Equipment:</strong> Heavy-duty machinery for efficient large-scale work</li>
+                        <li><strong>Flexible Scheduling:</strong> Work around your agricultural and livestock operations</li>
+                        <li><strong>Rural Understanding:</strong> Familiar with country property maintenance requirements</li>
+                        <li><strong>Comprehensive Solutions:</strong> From pastures to residential areas, we handle it all</li>
+                        <li><strong>100% Satisfaction Guarantee:</strong> Quality results on every acre, every time</li>
+                    </ul>
+
+                    <h3>Specialized Services for Rural Loxahatchee Properties</h3>
+                    <ul>
+                        <li><strong>Equestrian Facility Maintenance:</strong> Arena grooming, paddock care, and trail upkeep</li>
+                        <li><strong>Large-Scale Land Clearing:</strong> Brush removal and property development preparation</li>
+                        <li><strong>Agricultural Beautification:</strong> Enhance curb appeal while maintaining functionality</li>
+                        <li><strong>Estate Entrance Enhancement:</strong> Create impressive driveways and entry features</li>
+                        <li><strong>Seasonal Property Management:</strong> Year-round care for absentee owners</li>
+                        <li><strong>Storm Preparation & Recovery:</strong> Protect and restore large properties after severe weather</li>
+                    </ul>
+
+                    <p><strong>Ready to transform your Loxahatchee acreage?</strong> Contact Elite Lawn Masters today for a comprehensive property assessment. Our experienced team will develop a customized maintenance plan that keeps your large property looking its absolute best while respecting your budget and schedule. Call now for special pricing on multi-acre properties!</p>
+
+                    <h3>Get Professional Care for Your Rural Property Today</h3>
+                    <p>Don't let

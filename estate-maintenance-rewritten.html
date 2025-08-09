@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Beach County Estate Maintenance | Elite Lawn Masters</title>
+    <meta name="description" content="Premier estate maintenance in Palm Beach County FL. Luxury property care for multi-acre estates. Free consultation! Call (561) 555-LAWN today.">
+    <meta name="keywords" content="estate maintenance Palm Beach County, luxury property care, large estate landscaping, comprehensive property maintenance, high-end landscape services">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Estate Maintenance Palm Beach County FL",
+        "description": "Premier estate maintenance and luxury property care services in Palm Beach County, Florida",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Elite Lawn Masters",
+            "telephone": "(561) 555-LAWN",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "West Palm Beach",
+                "addressRegion": "FL",
+                "postalCode": "33401"
+            }
+        },
+        "areaServed": "Palm Beach County, FL",
+        "serviceType": "Estate Maintenance",
+        "additionalType": "Luxury Property Care"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #87CEEB;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #87CEEB;
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e55529;
+            transform: translateY(-2px);
+        }
+        
+        /* Estate Badge */
+        .estate-badge {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(30, 58, 95, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(30, 58, 95, 0.8), rgba(45, 90, 135, 0.8)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect width="1200" height="500" fill="%231e3a5f"/><path d="M0,250 Q200,150 400,200 T800,180 Q1000,160 1200,190 L1200,500 L0,500 Z" fill="%232d5a87" opacity="0.7"/><circle cx="150" cy="80" r="50" fill="%2387CEEB" opacity="0.4"/><circle cx="900" cy="120" r="70" fill="%2387CEEB" opacity="0.3"/><path d="M200,400 Q500,300 800,350 T1100,320 L1100,500 L200,500 Z" fill="%23B0C4DE" opacity="0.5"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            background: rgba(135, 206, 235, 0.2);
+            padding: 20px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(135, 206, 235, 0.3);
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-alt {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e3a5f;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+        
+        .main-content h2 {
+            color: #1e3a5f;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+        
+        .main-content h3 {
+            color: #2d5a87;
+            margin: 35px 0 20px 0;
+            font-size: 1.5rem;
+        }
+        
+        .main-content p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .main-content ul {
+            margin: 25px 0;
+            padding-left: 25px;
+        }
+        
+        .main-content li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        /* Estate Highlight Box */
+        .estate-highlight {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .estate-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 20px,
+                rgba(135, 206, 235, 0.1) 20px,
+                rgba(135, 206, 235, 0.1) 40px
+            );
+            animation: luxury-flow 18s linear infinite;
+        }
+        
+        @keyframes luxury-flow {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(0deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(360deg); }
+        }
+        
+        .estate-highlight h3 {
+            color: #87CEEB;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .estate-highlight p {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 0;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 5px solid #1e3a5f;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #2d5a87;
+        }
+        
+        .service-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Estate Types Grid */
+        .estate-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .estate-type {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid #1e3a5f;
+            transition: all 0.3s;
+        }
+        
+        .estate-type:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .estate-type h4 {
+            color: #1e3a5f;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .estate-type p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Luxury Features */
+        .luxury-features {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 80px 0;
+            margin: 60px 0;
+        }
+        
+        .luxury-features h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(135, 206, 235, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #87CEEB;
+        }
+        
+        .feature-card h3 {
+            color: #87CEEB;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .feature-card p {
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #e55529;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3a5f;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Estate Badge -->
+    <div class="estate-badge">
+        <div class="container">
+            🏰 Palm Beach County's Premier Estate Maintenance Experts - Luxury Excellence Since 2017
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Elite <span>Lawn</span> Masters</a>
+                <div class="header-contact">
+                    <a href="tel:5615551234" class="phone">📞 (561) 555-LAWN</a>
+                    <a href="#consultation" class="cta-button">Get Your Free Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Premier Estate Maintenance in Palm Beach County, FL</h1>
+            <p class="subtitle">Transform your luxury estate with comprehensive maintenance that delivers pristine landscapes and enhanced property value year-round</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span>🏰</span>
+                    <span>Estate Specialists</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🌟</span>
+                    <span>Luxury Standards</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🛡️</span>
+                    <span>100% Satisfaction Guaranteed</span>
+                </div>
+            </div>
+            
+            <a href="#consultation" class="hero-cta">
+                <span>Schedule Your Free Estate Assessment</span>
+                <span>➤</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Palm Beach County's Most Trusted Estate Maintenance Service Near Me</h2>
+                    <p>Elite Lawn Masters delivers exceptional estate maintenance throughout Palm Beach County, from Wellington's equestrian properties to Palm Beach's oceanfront mansions. Our comprehensive approach ensures every aspect of your luxury estate receives meticulous care that preserves and enhances its value. We understand that your estate represents more than property—it's a legacy requiring the highest standards of professional maintenance to maintain its pristine appearance and substantial investment value.</p>
+                    
+                    <p>Our estate maintenance programs combine cutting-edge techniques with time-tested practices, delivering results that exceed the expectations of Palm Beach County's most discerning property owners. From multi-acre landscapes to intricate formal gardens, we provide the expertise and reliability your estate deserves.</p>
+
+                    <div class="estate-highlight">
+                        <h3>Transform Your Estate Today!</h3>
+                        <p>Comprehensive luxury property care that delivers lush landscapes and lasting value</p>
+                    </div>
+
+                    <h3>Complete Estate Maintenance Services</h3>
+                    <ul>
+                        <li><strong>Multi-Acre Landscape Management:</strong> Professional care for expansive properties and estate grounds</li>
+                        <li><strong>Infrastructure Maintenance:</strong> Driveways, pathways, walls, and hardscape preservation</li>
+                        <li><strong>Advanced Irrigation Systems:</strong> Smart water management for optimal lawn health and conservation</li>
+                        <li><strong>Specialty Garden Care:</strong> Rose gardens, topiaries, and rare plant collections</li>
+                        <li><strong>Security Landscaping:</strong> Privacy hedging and perimeter maintenance for estate protection</li>
+                        <li><strong>Event Preparation:</strong> Special occasion landscaping and post-event restoration</li>
+                        <li><strong>Year-Round Programs:</strong> Customized seasonal maintenance ensuring continuous excellence</li>
+                    </ul>
+
+                    <h3>Palm Beach County Estate Communities We Serve</h3>
+                    <div class="estate-types-grid">
+                        <div class="estate-type">
+                            <h4>🏰 Multi-Acre Luxury Estates</h4>
+                            <p>Comprehensive care for expansive properties with formal gardens and outdoor amenities.</p>
+                        </div>
+                        <div class="estate-type">
+                            <h4>🐎 Wellington Equestrian Properties</h4>
+                            <p>Specialized maintenance for horse farms and training facilities requiring expert care.</p>
+                        </div>
+                        <div class="estate-type">
+                            <h4>🌊 Waterfront Estates</h4>
+                            <p>Expert care for oceanfront and Intracoastal properties with unique coastal needs.</p>
+                        </div>
+                        <div class="estate-type">
+                            <h4>🏖️ Palm Beach Mansions</h4>
+                            <p>Pristine maintenance for beachfront luxury homes with salt-tolerant landscaping.</p>
+                        </div>
+                        <div class="estate-type">
+                            <h4>🏛️ Historic Properties</h4>
+                            <p>Respectful maintenance preserving architectural heritage and mature landscapes.</p>
+                        </div>
+                        <div class="estate-type">
+                            <h4>🏢 Commercial Estates</h4>
+                            <p>Executive retreats and luxury commercial properties requiring premium care.</p>
+                        </div>
+                    </div>
+
+                    <h3>Why Palm Beach County's Elite Choose Us</h3>
+                    <p>Our estate maintenance excellence delivers exceptional results through:</p>
+                    <ul>
+                        <li><strong>Preservation Excellence:</strong> Protecting existing landscape investments and infrastructure</li>
+                        <li><strong>Continuous Enhancement:</strong> Improving property aesthetics and functionality year-round</li>
+                        <li><strong>Value Protection:</strong> Maintenance practices that preserve and increase property values</li>
+                        <li><strong>Discretion & Privacy:</strong> Professional service respecting high-profile resident needs</li>
+                        <li><strong>Emergency Response:</strong> Rapid deployment for storm damage and urgent issues</li>
+                        <li><strong>Comprehensive Insurance:</strong> Full coverage protecting your valuable estate investment</li>
+                    </ul>
+
+                    <h3>Seasonal Estate Care Programs</h3>
+                    <p>Our year-round maintenance adapts to Palm Beach County's unique seasons:</p>
+                    <ul>
+                        <li><strong>Winter (Peak Season):</strong> Enhanced presentation for social season and events</li>
+                        <li><strong>Spring:</strong> Renewal programs with fresh plantings and landscape updates</li>
+                        <li><strong>Summer:</strong> Intensive maintenance during challenging growing conditions</li>
+                        <li><strong>Hurricane Season:</strong> Storm preparation, monitoring, and recovery services</li>
+                    </ul>
+
+                    <p><strong>Ready to experience estate maintenance that matches your property's prestige?</strong> Contact Elite Lawn Masters today for your complimentary estate assessment. Our experts will evaluate your unique needs and create a customized maintenance program that delivers exceptional results. Call now for exclusive estate pricing!</p>
+
+                    <h3>Get Started With Premier Estate Care</h3>
+                    <p>Don't let estate maintenance compromise your property's potential. Elite Lawn Masters provides the comprehensive, reliable service your luxury estate deserves. Schedule your free consultation today and discover why Palm Beach County's most discerning property owners trust us with their estates!</p>
+                </div>
+
+                <div style="background: white; padding: 0;">
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #1e3a5f; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #1e3a5f; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">🏰 Estate Excellence</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #1e3a5f; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Multi-acre expertise
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #1e3a5f; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Luxury standards
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #1e3a5f; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Value preservation
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #1e3a5f; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                Premium discretion
+                            </li>
+                            <li style="padding: 12px 0; border: none; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #1e3a5f; font-weight: bold; font-size: 1.1rem;">✓</span>
+                                100% satisfaction
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 35px; border-radius: 20px; margin-bottom: 35px; border-left: 6px solid #1e3a5f; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <h3 style="color: #1e3a5f; margin-bottom: 25px; text-align: center; font-size: 1.4rem;">📞 Get Started Today!</h3>
+                        <p style="text-align: center; margin-bottom: 20px;">Premier estate maintenance near me</p>
+                        <div style="text-align: center;">
+                            <a href="tel:5615551234" style="display: block; background: #1e3a5f; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-bottom: 10px;">📞 Call (561) 555-LAWN</a>
+                            <a href="#consultation" style="display: block; background: #ff6b35; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold;">Schedule Estate Assessment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Estate Services</h2>
+            <p class="section-subtitle">Complete property care for Palm Beach County's finest estates</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Landscape Management</h3>
+                    <p>Comprehensive care for multi-acre properties including lawns, gardens, and natural areas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Infrastructure Care</h3>
+                    <p>Maintenance of driveways, pathways, walls, and all hardscape elements throughout your estate.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Irrigation Systems</h3>
+                    <p>Advanced water management with smart irrigation technology for optimal efficiency.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌹</div>
+                    <h3>Specialty Gardens</h3>
+                    <p>Expert care for rose gardens, topiaries, orchards, and rare plant collections.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Security Landscaping</h3>
+                    <p>Privacy hedging, perimeter maintenance, and landscape lighting for estate protection.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎪</div>
+                    <h3>Event Services</h3>
+                    <p>Special occasion preparation, tent site management, and post-event restoration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Features Section -->
+    <section class="luxury-features">
+        <div class="container">
+            <h2>Luxury Estate Management Features</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px; opacity: 0.9;">Exceptional service standards for Palm Beach County's finest properties</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>White-Glove Service</h3>
+                    <p>Meticulous attention to detail with service standards matching your estate's prestige and value.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Absolute Discretion</h3>
+                    <p>Complete confidentiality with background-checked staff respecting privacy of high-profile residents.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Emergency Response</h3>
+                    <p>24/7 availability for storm damage, irrigation failures, and urgent estate maintenance needs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Property Management</h3>
+                    <p>Comprehensive reporting and coordination with property managers for seamless estate operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="consultation">
+        <div class="container">
+            <h2>Ready for Palm Beach County's Premier Estate Care?</h2>
+            <p>Join elite property owners who trust us for exceptional estate maintenance</p>
+            <div class="cta-buttons">
+                <a href="tel:5615551234" class="btn-primary">
+                    <span>📞</span>
+                    <span>Call Now for Free Assessment</span>
+                </a>
+                <a href="/#quote" class="btn-secondary">Schedule Estate Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
